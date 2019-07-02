@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books and Authors</title>
+</head>
+<body>
+
+{% for book in books %}
+    <p> the book {{ book }} is written by the user {{ book.author_id.user_id.username }} with the name
+        {{ book.author_id.first_name }} {{ book.author_id.second_name }}</p>
+{% endfor %}
+</body>
+</html>
